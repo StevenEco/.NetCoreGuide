@@ -1,0 +1,11 @@
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\bin\Debug\netcoreapp2.2\CoreStudy01.deps.json
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\bin\Debug\netcoreapp2.2\CoreStudy01.runtimeconfig.json
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\bin\Debug\netcoreapp2.2\CoreStudy01.runtimeconfig.dev.json
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\bin\Debug\netcoreapp2.2\CoreStudy01.dll
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\bin\Debug\netcoreapp2.2\CoreStudy01.pdb
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.csprojAssemblyReference.cache
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.csproj.CoreCompileInputs.cache
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.AssemblyInfoInputs.cache
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.AssemblyInfo.cs
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.dll
+D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.pdb
