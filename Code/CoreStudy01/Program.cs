@@ -135,6 +135,17 @@ namespace CoreStudy01
              */ 
         }
         #endregion
+        #region 数组操作
+        public static void T3()
+        {
+            //必须指定数组初始大小
+            int [] a = new int [5];
+            //将数组初始化五个数组成
+            int [] b = new int []{1,2,3,4,5};
+            //通过索引获取内容，从0开始
+            Console.WriteLine(b[0]);
+        }
+        #endregion
         #region 计算结构体大小
         public static void TQ1()
         {
@@ -174,6 +185,11 @@ namespace CoreStudy01
             Console.WriteLine("位运算符使用");
             T2();
             Console.WriteLine("---------------------------------------");
+            //数组
+            Console.WriteLine("数组使用");
+            T3();
+            Console.WriteLine("---------------------------------------");
+            
             // 结构体
             Console.WriteLine("结构体");
             TQ1();
