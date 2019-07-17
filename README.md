@@ -1,3 +1,57 @@
-# .NetCore-Guild-Book
-This is the simple Class to learn Microsoft Tech, such as C#,Typescript and so on
+# .NetCore技术开发指南
+
+## 简介
+本系列教程是一份关于微软.NET Core技术栈的全面的教程，其中涉及了C#、Typescript、Angular、Redis等一系列的教程。其中教程中通常会含有面向新手向的基础内容，也有对于已经学习了一段时间但是对C#并不甚了解的朋友的提升性内容。每一小节配有一些简单的习题。
+
+## 内容
+列出的连接表示已经更新：
+### WEB全栈教程
+- C#教程
+    - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
+        - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1.md)
+        - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2.md)
+    - C#中级教程
+    - C#高级教程
+    - C#异步教程
+- 数据结构
+    - 数据结构与算法
+- 数据库访问技术
+    - Microsoft SqlServer数据库教程
+    - Entityframework Core教程
+- WEB后端开发
+    - ASP.NET Core MVC教程
+    - ASP.NET Core WebApi教程
+- WEB前端开发
+    - Html/CSS/Typescript简单教程
+    - Angular7(8) 简要教程
+- 第三方开源库使用  
+    - IdentityServer4 授权服务教程
+    - Redis 缓存服务
+    - Docker容器
+
+### .NET ML机器学习
+- 微积分
+- 线性代数
+- 概率论
+- 数值计算方法
+- 凸优化
+- 运筹学
+- 深度学习
+- 机器学习
+- 自然语言处理
+
+### 选修 计算机科学
+- 编译原理
+- 操作系统
+- 计算机网络
+
+
+## 后记
+我是一名普通的微软技术爱好者，记得从我初中第一次使用 *Windows Phone*手机开始，我就与这家世界五百强，科技三巨头之一的微软结下了不解之缘。也是因为这一部手机，让我第一次接触到了C#(其实是微软的应用生态圈太烂，想着自己写点玩玩)。我被C#优美的语法吸引住了，也被软件的魔力吸引住了，大学毅然决然的选择了软件工程专业。
+
+对于这份教程的制作，我很久之前就有过计划，因为国内.NET技术并不热门，对于.NET Core这种新技术的教程也是少之又少，除了Cnblogs博客园中对于.NET Core的教程较多外，其余地方不是抄袭就是写的质量不佳。最近一段时间潜心研读了《Depth in C#》和《CLR Via C#》这两本C#圣经，有一些心得与体会，希望写出一份完整的教程，让更多的人了解C#，学习C#。
+
+现在算来，从第一行Helloworld到现在已经快有10年了，很是惭愧，我对于许多设计模式或者代码原理并不是很了解，在本教程中出现的错误，希望各位不吝赐教，及时指出。谢谢！
+
+我的邮箱：cxtionch@live.com
 
