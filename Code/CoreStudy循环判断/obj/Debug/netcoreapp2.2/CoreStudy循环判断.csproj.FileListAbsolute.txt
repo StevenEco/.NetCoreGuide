@@ -1,0 +1,11 @@
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\bin\Debug\netcoreapp2.2\CoreStudy循环判断.deps.json
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\bin\Debug\netcoreapp2.2\CoreStudy循环判断.runtimeconfig.json
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\bin\Debug\netcoreapp2.2\CoreStudy循环判断.runtimeconfig.dev.json
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\bin\Debug\netcoreapp2.2\CoreStudy循环判断.dll
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\bin\Debug\netcoreapp2.2\CoreStudy循环判断.pdb
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.csprojAssemblyReference.cache
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.csproj.CoreCompileInputs.cache
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.AssemblyInfoInputs.cache
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.AssemblyInfo.cs
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.dll
+D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy循环判断\obj\Debug\netcoreapp2.2\CoreStudy循环判断.pdb
