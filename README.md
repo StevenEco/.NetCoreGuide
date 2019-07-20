@@ -11,7 +11,10 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
         - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1.md)
         - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2.md)
-        - [面向对象之类(并不是很完善)](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3.md)
+        - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3.md)
+        - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4.md)
+        - [接口、枚举、抽象](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-5.md)
+        - [类的生命周期（不完整，还在更新)](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-6.md)
     - C#中级教程
     - C#高级教程
     - C#异步教程
