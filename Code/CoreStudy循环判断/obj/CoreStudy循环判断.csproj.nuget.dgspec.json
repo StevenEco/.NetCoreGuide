@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj": {}
+    "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj": {
+    "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
+        "projectUniqueName": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
         "projectName": "CoreStudy循环判断",
-        "projectPath": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
+        "projectPath": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
         "packagesPath": "C:\\Users\\cxtio\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\obj\\",
+        "outputPath": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudy循环判断\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\cxtio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\cxtio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
