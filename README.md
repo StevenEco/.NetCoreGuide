@@ -9,12 +9,15 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 ### WEB全栈教程
 - C#教程
     - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
-        - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1.md)
-        - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2.md)
-        - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3.md)
-        - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4.md)
-        - [接口、枚举、抽象](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-5.md)
-        - [类的生命周期（不完整，还在更新)](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-6.md)
+        - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
+        - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2循环判断.md)
+        - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3面向对象.md)
+        - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4索引器、静态、常量、this.md)
+        - [接口、枚举、抽象](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-5接口、枚举、抽象.md)
+        - [类的继承与多态](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-6多态与继承.md)
+        - [类的生命周期](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-7类的生命周期.md)
+        - [泛型（缺少协变与自变）](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-8泛型.md)
+        - [第一章综合编程题](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/第一章综合编程题.md)
     - C#中级教程
     - C#高级教程
     - C#异步教程
