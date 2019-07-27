@@ -9,3 +9,14 @@ D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对�
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.AssemblyInfo.cs
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.dll
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\bin\Debug\netcoreapp2.2\CoreStudy03面向对象.deps.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\bin\Debug\netcoreapp2.2\CoreStudy03面向对象.runtimeconfig.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\bin\Debug\netcoreapp2.2\CoreStudy03面向对象.runtimeconfig.dev.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\bin\Debug\netcoreapp2.2\CoreStudy03面向对象.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\bin\Debug\netcoreapp2.2\CoreStudy03面向对象.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.csprojAssemblyReference.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.csproj.CoreCompileInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.AssemblyInfoInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.AssemblyInfo.cs
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy03面向对象\obj\Debug\netcoreapp2.2\CoreStudy03面向对象.pdb

@@ -2,18 +2,25 @@
 
 namespace CoreStudy03面向对象
 {
-    [Flags]
-    public enum Status
+    struct Test
     {
-        A = 1,
-        B = 2,
-        C = 4
+        public int x;
+        public void test(int x)
+        {
+            this.x = x;
+        }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine((Status)7);
+
+            Test t = new Test();
+            t.x = 100;
+            object a = t;//装箱
+            ((Test)a).test(300);//x还是100不变，为什么
+            Console.WriteLine(((Test)a).x);
         }
     }
 }
