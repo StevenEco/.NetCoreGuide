@@ -18,7 +18,8 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - [类的生命周期](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-7类的生命周期.md)
         - [泛型（缺少协变与自变）](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-8泛型.md)
         - [第一章综合编程题](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/第一章综合编程题.md)
-    - C#中级教程
+    - [C#中级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle)
+        - [装箱与拆箱](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
     - C#高级教程
     - C#异步教程
 - 数据结构
