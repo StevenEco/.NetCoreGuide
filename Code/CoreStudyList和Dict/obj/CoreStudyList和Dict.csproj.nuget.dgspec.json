@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {}
+  },
+  "projects": {
+    "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
+        "projectName": "CoreStudyList和Dict",
+        "projectPath": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
+        "packagesPath": "C:\\Users\\cxtio\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cxtio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
