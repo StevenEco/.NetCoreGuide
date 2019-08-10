@@ -9,3 +9,14 @@ D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\o
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.AssemblyInfo.cs
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.dll
 D:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\bin\Debug\netcoreapp2.2\CoreStudyList和Dict.deps.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\bin\Debug\netcoreapp2.2\CoreStudyList和Dict.runtimeconfig.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\bin\Debug\netcoreapp2.2\CoreStudyList和Dict.runtimeconfig.dev.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\bin\Debug\netcoreapp2.2\CoreStudyList和Dict.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\bin\Debug\netcoreapp2.2\CoreStudyList和Dict.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.csprojAssemblyReference.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.csproj.CoreCompileInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.AssemblyInfoInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.AssemblyInfo.cs
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudyList和Dict\obj\Debug\netcoreapp2.2\CoreStudyList和Dict.pdb
