@@ -26,9 +26,9 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - C#高级教程
     - C#异步教程
 - 数据结构
-    - [数据结构与算法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct)
-        - [线性表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct/线性表)
-            - [顺序表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct/线性表/1-1顺序表.md)
+    - [数据结构与算法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct)
+        - [线性表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct/线性表)
+            - [顺序表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct/线性表/1-1顺序表.md)
 - 数据库访问技术
     - Microsoft SqlServer数据库教程
     - Entityframework Core教程
