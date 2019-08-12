@@ -20,12 +20,15 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - [第一章综合编程题](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/第一章综合编程题.md)
     - [C#中级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle)
         - [装箱与拆箱](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
-        - [List、Dictionary](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
-        - [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
+        - [List、Dictionary](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-2List.md)
+        - [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-3Linq与拓展方法.md)
+        - [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4装箱与拆箱.md)
     - C#高级教程
     - C#异步教程
 - 数据结构
-    - 数据结构与算法
+    - [数据结构与算法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct)
+        - [线性表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct/线性表)
+            - [顺序表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/DataStruct/线性表/1-1顺序表.md)
 - 数据库访问技术
     - Microsoft SqlServer数据库教程
     - Entityframework Core教程
