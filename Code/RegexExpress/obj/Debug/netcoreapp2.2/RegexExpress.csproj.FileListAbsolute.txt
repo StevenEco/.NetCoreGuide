@@ -1,0 +1,11 @@
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\bin\Debug\netcoreapp2.2\RegexExpress.deps.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\bin\Debug\netcoreapp2.2\RegexExpress.runtimeconfig.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\bin\Debug\netcoreapp2.2\RegexExpress.runtimeconfig.dev.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\bin\Debug\netcoreapp2.2\RegexExpress.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\bin\Debug\netcoreapp2.2\RegexExpress.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.csprojAssemblyReference.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.csproj.CoreCompileInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.AssemblyInfoInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.AssemblyInfo.cs
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\RegexExpress\obj\Debug\netcoreapp2.2\RegexExpress.pdb
