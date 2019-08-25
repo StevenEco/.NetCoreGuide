@@ -62,7 +62,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 - 计算机网络
 
 ### .NET Core 3.X
-- [.NET Core 3.X新技术](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/.NET Core 3.0 Preview/What's New.md)
+- [.NET Core 3.X新技术](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20Core%203.0%20Preview/What's%20New.md)
 - IOT(RasperryPi&Arduino)
 - EFCore3.0
 - WPF (Base on Core3.0)
