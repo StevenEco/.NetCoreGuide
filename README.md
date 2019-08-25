@@ -43,6 +43,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - IdentityServer4 授权服务教程
     - Redis 缓存服务
     - Docker容器
+    - WebApi With GraphQL
 
 ### .NET ML机器学习
 - 微积分
@@ -60,7 +61,13 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 - 操作系统
 - 计算机网络
 
-
+### .NET Core 3.X
+- [.NET Core 3.X新技术](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/.NET Core 3.0 Preview/What's New.md)
+- IOT(RasperryPi&Arduino)
+- EFCore3.0
+- WPF (Base on Core3.0)
+- ASP.NET Core3.0 News
+- 
 ## 后记
 我是一名普通的微软技术爱好者，记得从我初中第一次使用 *Windows Phone*手机开始，我就与这家世界五百强，科技三巨头之一的微软结下了不解之缘。也是因为这一部手机，让我第一次接触到了C#(其实是微软的应用生态圈太烂，想着自己写点玩玩)。我被C#优美的语法吸引住了，也被软件的魔力吸引住了，大学毅然决然的选择了软件工程专业。
 
