@@ -23,6 +23,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - [List、Dictionary](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-2List.md)
         - [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-3Linq与拓展方法.md)
         - [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4正则表达式.md)
+        - [常见的实用类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-5常见的实用类.md)
     - C#高级教程
     - C#异步教程
 - 数据结构
