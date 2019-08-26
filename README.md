@@ -24,12 +24,30 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-3Linq与拓展方法.md)
         - [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4正则表达式.md)
         - [常见的实用类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-5常见的实用类.md)
+        - [Json和Xml操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-6Json和XML操作.md)
     - C#高级教程
+        - 反射
+        - 委托与事件
+        - 表达式树
+        - 控制反转(IOC) 
+        - 多线程
+        - Socket通信
+        - 网络通信
     - C#异步教程
+        - 异步简介
+        - 如何处理异步
+        - Task
 - 数据结构
     - [数据结构与算法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct)
         - [线性表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct/线性表)
             - [顺序表](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/DataStruct/线性表/1-1顺序表.md)
+            - 单链表
+            - 二叉树、树与森林
+            - 栈和队列
+            - 图
+            - 排序算法
+            - 最短路径算法
+            - 查找算法
 - 数据库访问技术
     - Microsoft SqlServer数据库教程
         - 范式
@@ -62,7 +80,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - TagHelper
     - ASP.NET Core 2.X WebApi教程
         - Http的几种请求
-        - 设计Api
+        - RESTFUL风格Api
         - 参数的传递
         - Swagger/PostMan
         - 使用GraphQl
@@ -98,7 +116,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 - EFCore3.0
 - WPF (Base on Core3.0)
 - ASP.NET Core3.0 News
-- 
+
 ## 后记
 我是一名普通的微软技术爱好者，记得从我初中第一次使用 *Windows Phone*手机开始，我就与这家世界五百强，科技三巨头之一的微软结下了不解之缘。也是因为这一部手机，让我第一次接触到了C#(其实是微软的应用生态圈太烂，想着自己写点玩玩)。我被C#优美的语法吸引住了，也被软件的魔力吸引住了，大学毅然决然的选择了软件工程专业。
 
