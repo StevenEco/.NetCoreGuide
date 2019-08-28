@@ -25,6 +25,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4正则表达式.md)
         - [常见的实用类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-5常见的实用类.md)
         - [Json和Xml操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-6Json和XML操作.md)
+        - [文件操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-7文件操作.md)
     - C#高级教程
         - 反射
         - 委托与事件
