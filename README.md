@@ -68,8 +68,8 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - 种子数据填充
 - WEB后端开发
     - ASP.NET Core 基础
-        - WebHost、项目结构与配置
-        - 依赖注入与管道
+        - [WebHost、项目结构与配置](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-1WebHost%E4%B8%8E%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE.md)
+        - [依赖注入与控制反转](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-2%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC.md)
         - 中间件
         - 路由
         - 配置EFCore
