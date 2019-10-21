@@ -9,3 +9,13 @@ D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\
 D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.AssemblyInfo.cs
 D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.dll
 D:\OneDrive\Documents\Microsoft Lesson\Code\CoreStudy01\obj\Debug\netcoreapp2.2\CoreStudy01.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\bin\Debug\netcoreapp2.2\CoreStudy01.deps.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\bin\Debug\netcoreapp2.2\CoreStudy01.runtimeconfig.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\bin\Debug\netcoreapp2.2\CoreStudy01.runtimeconfig.dev.json
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\bin\Debug\netcoreapp2.2\CoreStudy01.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\bin\Debug\netcoreapp2.2\CoreStudy01.pdb
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\obj\Debug\netcoreapp2.2\CoreStudy01.csprojAssemblyReference.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\obj\Debug\netcoreapp2.2\CoreStudy01.AssemblyInfoInputs.cache
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\obj\Debug\netcoreapp2.2\CoreStudy01.AssemblyInfo.cs
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\obj\Debug\netcoreapp2.2\CoreStudy01.dll
+E:\OneDrive\Documents\Microsoft Lesson\.NetCoreGuide\Code\CoreStudy基础类型\obj\Debug\netcoreapp2.2\CoreStudy01.pdb
