@@ -88,6 +88,8 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
         - 使用GraphQl
     - ASP.NET Core 3.0
 - WEB前端开发
+    - Blazor
+      - 
     - Html/CSS/Typescript简单教程
     - Angular7(8) 简要教程
 - 第三方开源库使用  

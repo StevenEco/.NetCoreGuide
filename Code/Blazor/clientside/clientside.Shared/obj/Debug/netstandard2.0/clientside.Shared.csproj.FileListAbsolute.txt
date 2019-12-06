@@ -1,0 +1,8 @@
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/bin/Debug/netstandard2.0/clientside.Shared.deps.json
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/bin/Debug/netstandard2.0/clientside.Shared.dll
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/bin/Debug/netstandard2.0/clientside.Shared.pdb
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/obj/Debug/netstandard2.0/clientside.Shared.csprojAssemblyReference.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/obj/Debug/netstandard2.0/clientside.Shared.AssemblyInfoInputs.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/obj/Debug/netstandard2.0/clientside.Shared.AssemblyInfo.cs
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/obj/Debug/netstandard2.0/clientside.Shared.dll
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Shared/obj/Debug/netstandard2.0/clientside.Shared.pdb

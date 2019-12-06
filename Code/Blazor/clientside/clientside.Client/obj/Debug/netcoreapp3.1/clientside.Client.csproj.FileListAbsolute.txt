@@ -1,0 +1,8 @@
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.csprojAssemblyReference.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/staticwebassets/clientside.Client.StaticWebAssets.Manifest.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/staticwebassets/clientside.Client.StaticWebAssets.xml
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.MvcApplicationPartsAssemblyInfo.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.RazorAssemblyInfo.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.RazorAssemblyInfo.cs
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.AssemblyInfoInputs.cache
+/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netcoreapp3.1/clientside.Client.AssemblyInfo.cs

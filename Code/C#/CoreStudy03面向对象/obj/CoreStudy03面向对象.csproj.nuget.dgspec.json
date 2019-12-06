@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/CoreStudy03面向对象/CoreStudy03面向对象.csproj": {}
+  },
+  "projects": {
+    "/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/CoreStudy03面向对象/CoreStudy03面向对象.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/CoreStudy03面向对象/CoreStudy03面向对象.csproj",
+        "projectName": "CoreStudy03面向对象",
+        "projectPath": "/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/CoreStudy03面向对象/CoreStudy03面向对象.csproj",
+        "packagesPath": "/Users/warrenryan/.nuget/packages/",
+        "outputPath": "/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/CoreStudy03面向对象/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/warrenryan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
