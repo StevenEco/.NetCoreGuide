@@ -17,12 +17,12 @@ Blazor你可以简单的理解为使用C#写Angular框架，Blazor是基于组�
 ### Server-Side
 
 ***Server-Side*** 也被称为Blazor服务器，它是完全运行于服务器上面，也就是说客户端的浏览器只是一个空壳页面，它不包含任何的逻辑和除了首页（通常会被称为‘_Host’）以外的任何页面，该种模式完全托管于服务器，UI的修改已经前端所发生的一切事件都需要传往服务器进行计算。传输的过程使用的是SignalR的方式。
-![ServerSide](../../Pic/blazor-server.png)
+![ServerSide](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/Pic/blazor-server.png)
 使用这种方式意味着对于服务器的带宽以及性能要求会极其之高，但是对于一些需要使用到SignalR的应用以及一些访问量不大的地方使用SignalR也许会有不小的用途。
 一次点击事件在websockets中的传输
-![click](../../Pic/blazor_click.png)
+![click](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/Pic/blazor_click.png)
 并且在无操作的情况下，网页仍需要定期发送心跳包确认服务器状态，若服务器无响应，则整个网页停止服务
-![shutdown](../../Pic/shutdown.png)
+![shutdown](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/Pic/shutdown.png)
 
 ## ClientSide
 
@@ -30,7 +30,7 @@ Client-Side是SPA(Single Page Application)应用，基于一种叫WebAssembly的
 
 对于客户端模式，Blazor是将整个项目程序集和运行时(mono)一同发送到了浏览器，通过WebAssembly对JavaScript互操作处理DOM节点和相关api的调用。
 
-![client](../../Pic/blazor-webassembly.png)
+![client](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/Pic/blazor-webassembly.png)
 
 ## 两种方式对比
 
@@ -93,8 +93,10 @@ Client-Side是SPA(Single Page Application)应用，基于一种叫WebAssembly的
     }
     // 更换webhost
     public static IWebAssemblyHostBuilder CreateHostBuilder(string[] args) =>
-        BlazorWebAssemblyHost.CreateDefaultBuilder()                .UseBlazorStartup<Startup>();
+        BlazorWebAssemblyHost.CreateDefaultBuilder()
+            .UseBlazorStartup<Startup>();
 ```
+
 随后你需要添加一个Server项目用于启动我们的服务，只需要在依赖注入中添加以下配置，中间件中激活我们的Blazor即可。
 
 ```C#

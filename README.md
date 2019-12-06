@@ -1,12 +1,16 @@
 # .NET Core技术开发指南
 
 ## 简介
+
 本系列教程是一份关于微软.NET Core技术栈的全面的教程，其中涉及了C#、Typescript、Angular、Redis等一系列的教程。其中教程中通常会含有面向新手向的基础内容，也有对于已经学习了一段时间但是对C#并不甚了解的朋友的提升性内容。每一小节配有一些简单的习题。
 ## 阅读建议
+
 PPT和Code以及Document需要一起结合起来看，其中Document写的最详细，里面包含了很多内容，PPT则适合学完后的总结，Code中有很多注释和DEMO，个人认为Code和Document结合起来看然后再完成练习的题目，基本上就能掌握一节的内容。
 ## 内容
+
 列出的连接表示已经更新：
 ### WEB全栈教程
+
 - C#教程
     - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
         - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
@@ -89,7 +93,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - ASP.NET Core 3.0
 - WEB前端开发
     - Blazor
-      - 
+      - [Blazor](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/Blazor/1-Blazor%E9%A1%B9%E7%9B%AE.md)
     - Html/CSS/Typescript简单教程
     - Angular7(8) 简要教程
 - 第三方开源库使用  
