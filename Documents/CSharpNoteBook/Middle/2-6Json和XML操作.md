@@ -1,14 +1,17 @@
 # *.NETCoreCSharp* 中级篇2-6
+
 >本节内容为Json和XML操作
 
 ## 简介
+
 Json和XML文本是计算机网络通信中常见的文本格式，其中Json其实就是JavaScript中的数组与对象，体现了一种面向对象的方式，而XML则是一种可标记语言，类似于我们的html标签，他更多的是体现一种层级关系。
 但无论哪一种文本格式，我们都有学习的必要。
 
-
 ## JSON
+
 首先，介绍一下Json:
 Json其实就是JavaScript里面的对象和数组，通过不同的组合，可以构成许多不同的数据结构。其中使用花括号的是对象，中括号的是数组，例如:
+
 ``` json
 {
 "data":
@@ -21,13 +24,15 @@ Json其实就是JavaScript里面的对象和数组，通过不同的组合，可
 "status":0
 }
 ```
+
 这里面，data就是一个对象，而people就是一个数组。
 
 如果你要处理Json数据，你在nuget上可以找到许多适宜的库，在这里，我是用的是LitJson，这可能是一个比较少见的库，但是我觉得很好用。
 
 这里我给出我们的免费api地址[https://www.sojson.com/api/weather.html](https://www.sojson.com/api/weather.html),这里你可以请求到我们的json文本。
 
-对于LitJson，它充分的阐明了我们Json的核心——数组与对象。对于LitJson，数组使用List<T>，对象则直接创建一个类进行处理。对于上面的例子，我们可以构造出如下的类关系
+对于LitJson，它充分的阐明了我们Json的核心——数组与对象。对于LitJson，数组使用`List<T>`，对象则直接创建一个类进行处理。对于上面的例子，我们可以构造出如下的类关系
+
 ``` C#
 public class data
 {
@@ -44,10 +49,10 @@ Main()
 
 更多内容可以看我的这篇博文[Json处理实战](https://www.cnblogs.com/WarrenRyan/p/10398638.html)，以及[LitJson的官网](https://litjson.net/)
 
-
 ## XML
 
 XML也是广泛应用于网络信息交换的一种常见文本格式，他的书写有点类似于我们的html，正如之前所说，他更多的是阐明一种层级关系。例如下文便是一个常见的xml文本的格式。
+
 ``` XML
 <Computers>
   <Computer ID="11111111" Description="Made in USA">
@@ -68,6 +73,7 @@ XML也是广泛应用于网络信息交换的一种常见文本格式，他的�
 在C#中，我们操作XML同样的有许多库，这里我们使用XmlDocument进行操作。
 
 XmlDocument类中的常用方法：
+
 - Load(string path)加载文件路径的Xml
 - SelectSingleNode(string node)选中节点
 - ChildNodes，属性不是函数，用于获取所有子节点，返回XmlNodeList对象
@@ -125,9 +131,8 @@ XmlDocument类中的常用方法：
          Console.WriteLine(ex.ToString());
     }
 ```
+
 博主不常用xml，更多内容请参考微软官方文档以及https://www.cnblogs.com/zhengwei-cq/p/7242979.html的这篇博文
-
-
 
 如果我的文章帮助了您，请您在github.NETCoreGuide项目帮我点一个star，在博客园中点一个关注和推荐。
 
