@@ -71,13 +71,13 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - 中间件
     - 路由
     - 配置EFCore
-  - ASP.NET Core 2.X MVC教程
+  - ASP.NET Core 3.X MVC教程
     - Controller
     - Razor
     - View
     - Model（含特性标签）
     - TagHelper
-  - ASP.NET Core 2.X WebApi教程
+  - ASP.NET Core 3.X WebApi教程
     - Http的几种请求
     - RESTFUL风格Api
     - 参数的传递
