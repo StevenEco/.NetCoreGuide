@@ -76,7 +76,8 @@ class TestContext : DbContext
 
 现在有一个简单的学生选课系统的数据库需要构建，已知涉及到了
 
-- 用户数据：其中又分成了管理员、老师和学生
+- 教师数据
+- 学生数据
 - 课程数据
 - 选课数据
 
@@ -120,15 +121,126 @@ public class TestModel
 
 在上下文中包含一种类型的DbSet，这意味着它包含在 EF Core 的模型中;我们通常将此类类型称为实体。EFCore 可以从/向数据库中读取和写入实体实例，如果使用的是关系数据库，EFCore可以通过迁移为实体创建表。也就是说，模型和数据库表是可以画等价关系的。
 
+实体常见的操作是指定表名（或视图）、指定键、指定列和不匹配。对应的FluentApi函数和Attribute如下：
+
+```C#
+// 指定表名 name为表名，Schema为架构名
+[Table(name:"",Schema ="")]
+modelBuilder.Entity<Test>().ToTable("",schema:"")//或ToView
+// 指定主键、外键
+[Key]、[ForeignKey]
+modelBuilder.Entity<Test>().HasKey()//或HasForeignKey、HasNoKey
+
+// 指定列
+[Column("")]
+modelBuilder.Entity<Test>().ToProperty()
+
+// 不匹配(不检索)
+[NotMapped]
+modelBuilder.Entity<Test>().Ingore()//排除属性
+modelBuilder.Ignore<Test>();
+```
+
 对于定义实体，我们有三种方式可以进行定义：
 
 #### 通过DbSet声明
 
+在数据库上下文中声明的非私有DbSet属性会被EFCore识别成实体模型，DbSet就是数据库映射到程序中的数据集合，对此集合的一切操作都会被视为对数据库的操作。
+
+定义DbSet如下，利用泛型指定实体模型：
+
+``` C#
+public class Context : DbContext
+{
+    public virtual DbSet<TestModel> TestModels { get; set;}
+}
+```
+
+当DbSet所设置的模型下没有使用FluentApi或Attribute时，DbSet的属性名则会对应数据库中实体表的名称。
+
 #### 通过导航属性
+
+导航属性就是一种类之间的关系属性，EFCore在构建我们的数据库模型的时候，并不是单单只盯着被显式声明的内容，EFCore会像递归一样一层一层的进行遍历查找，将有关系的内容统统认证为实体模型。
+
+例如：
+
+```C#
+public class A
+{
+    public virtual B B { get; set;}
+}
+public class B
+{
+    public virtual A A { get; set;}
+}
+public class Context : DbContext
+{
+    public virtual DbSet<A> A { get; set;}
+}
+```
+
+像以上这种情况，很明显A，B之间有着一一对应的关系，因此EFCore会将A和B都作为模型实体进行加载，而并不会因为B未声明而不加载。
 
 #### 通过OnModelCreating声明
 
+我们也可以通过重写OnModelCreating声明一个模型类，例如
+
+``` C#
+protected override void OnModelCreating(DbModelBuilder modelBuilder)
+{
+    // 指定模型
+    modelBuilder.Entity<TestModel>();
+}
+```
+
+综上所述，EFCore对模型的查找是只要有所提及，无论是显示的利用DbSet或是利用导航属性，亦或是在OnModelCreating中有所提及，都会被作为模型类进行操作。不过在这里，除非是你非常不需要显示声明，否则，建议使用DbSet进行显示声明，避免对开发带来不必要的麻烦。
+
+不过有时候我们不希望我们模型和数据库对应，因为有些模型只是为了辅助存在或作为一个子属性存在，在数据库中并不存在这个表，那么我们可以使用 *[NotMapped]* 标记，这样该类就不会被EFCore所识别为模型。
+
+#### 示例代码
+
+前文中我们提到了一个学生选课系统的概念模型，这里我们进行一个原始的建库操作。这里会交叉使用FluentApi和Attribute的方式进行书写以方便读者理解。
+
+首先我们建立简单的领域模型
+
+```C#
+[Table("Test_Student")]
+public class Student
+{
+    public int Id { get; set;}
+    public string Name { get; set; }
+    public Guid StudentId{ get; set; }
+}
+[Table("Test_Teacher")]
+public class Teacher
+{
+    public int Id {get;set;}
+    public string Name { get;set; }
+}
+
+public class Course
+{
+    public int Id {get;set;}
+    public string Name {get;set;}
+    public Guid CourseId{ get; set; }
+}
+public class Context : DbContext
+{
+    public virtual DbSet<Student> Students { get; set;}
+    public virtual DbSet<Teacher> Teachers { get; set;}
+    public virtual DbSet<Course> Courses { get; set;}
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Course>().ToTable("Test_Student");
+    }
+}
+```
+
+这样我们就大概做好了一个简单的数据库框架。
+
 ### 属性类型
+
+光有表设置显然是不够的，我们还需要对表中的字段和属性进行设置。表中的字段，如果是非引用类型，都会被识别成数据库中的列，引用类型在表中通常会作为导航属性存在。按照约定，具有getter和setter的所有公共属性都将包括在模型中映射到表中的列。
 
 ### 值映射转换
 
