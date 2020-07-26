@@ -204,25 +204,36 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 首先我们建立简单的领域模型
 
 ```C#
+public enum Gender
+{
+    Male,
+    Female
+}
+
 [Table("Test_Student")]
 public class Student
 {
     public int Id { get; set;}
     public string Name { get; set; }
-    public Guid StudentId{ get; set; }
+    public Gender Gender { get; set; }
+    public string Remark { get; set; }
+    public string StudentId{ get; set; }
 }
+
 [Table("Test_Teacher")]
 public class Teacher
 {
     public int Id {get;set;}
     public string Name { get;set; }
+    public Gender Gender { get; set; }
+    public string Remark { get; set; }
 }
 
 public class Course
 {
     public int Id {get;set;}
     public string Name {get;set;}
-    public Guid CourseId{ get; set; }
+    public string CourseId{ get; set; }
 }
 public class Context : DbContext
 {
@@ -236,21 +247,105 @@ public class Context : DbContext
 }
 ```
 
-这样我们就大概做好了一个简单的数据库框架。
+这样我们就大概做好了一个简单的数据库框架，不过这个数据模型是不符合我们实际设计的模型的，这里只作为讲解作用，并不作为实际项目的设计。
 
-### 属性类型
+### 属性类型和转换
 
-光有表设置显然是不够的，我们还需要对表中的字段和属性进行设置。表中的字段，如果是非引用类型，都会被识别成数据库中的列，引用类型在表中通常会作为导航属性存在。按照约定，具有getter和setter的所有公共属性都将包括在模型中映射到表中的列。
+光有表设置显然是不够的，我们还需要对表中的字段和属性进行设置。表中的字段，如果是非引用类型，都会被识别成数据库中的列，引用类型在表中通常会作为导航属性存在。按照约定，具有getter和setter的所有公共属性都将包括在模型中映射到表中的列。接下来仍然会分为FluentApi和Attribute进行编写。
 
-### 值映射转换
+在数据库中，我们对一个列的常见操作通常就是操作列名、列类型、排序规则、可空等。这里进行一个归纳和整理
 
-### 键
+#### 属性类型示例
+
+这里先用数据注解Attribute的方式进行操作，限于篇幅，在此仅对一个类进行操作，读者可根据自己需求对其他类进行编写。
+
+``` C#
+[Table("Test_Student")]
+public class Student
+{
+    public int Id { get; set;}
+    //属性不能为空
+    [Required]
+    // 列名，排序顺序，列类型
+    [Column(name:"Name",Order =1,TypeName ="varchar(25)")]
+    //等效于[Column(name:"",Order =1,TypeName ="varchar(25)"),Required]
+    //属性后接等号就是默认值的设置方法
+    public string Name { get; set; } = "abcd";
+    public Gender Gender { get; set; }
+    // 也可以通过设置maxLength属性进行限制长度
+    [Column("Remark"),MaxLength(150)]
+    public string Remark { get; set; }
+    public string StudentId{ get; set; }
+}
+```
+
+设置可空类型则是在类型后加？号，但是通过数据标注的方式进行设置的方法作者查阅了文档和资料并没有发现，只有FluentApi可以设置。应该是微软直接默认就是空，因此无需指定设置。
+
+这里是FluentApi的方式
+
+``` C#
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Student>().ToTable("Test_Student");
+        modelBuilder.Entity<Student>().Property(p => p.Name)
+            //非空
+            .IsRequired()
+            //列名
+            .HasColumnName("Name")
+            //列类型
+            .HasColumnType("varchar(25)")
+            //默认值
+            .HasDefaultValue("");
+        modelBuilder.Entity<Student>().Property(p => p.Remark)
+            //可空
+            .IsRequired()
+            //列名
+            .HasColumnName("Remark")
+            //可使用.IsFixedLength()设置为定长
+            //列最大长度
+            .HasMaxLength(150);
+    }
+```
+
+#### 值映射转换
+
+值转换提供了在写入数据库前的一次数据处理，试想一下，假如你不希望将加密过程放在业务层，或者说你习惯用枚举去存储一些值，但是在数据库中实际需要使用枚举名而不是枚举值，那么我们就需要进行值映射转换。
+
+值转换只在FluentApi中提供，我们可以在OnModelCreating中进行定义，例如：
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Student>().Property(p => p.Gender)
+        .HasConversion(
+            p => p.ToString(),
+            p => (Gender)Enum.Parse(typeof(Gender), p));
+}
+```
+
+在这里，第一个lambda表达式表示你的模型出，第二个则是数据库映射回你的模型类所需的处理。你也可以使用ValueConverter类来定义，例如：
+
+``` C#
+var converter = new ValueConverter<string, string>(
+    p => p.ToString(),
+    p => (Gender)Enum.Parse(typeof(Gender), p));
+```
+
+将此对象传入HasConversion方法亦可。
+
+### 键与索引
+
+键是数据库最精华的部分了。
+
+#### 主键和备用（候选）键
+
+#### 外键
+
+#### 索引
 
 ### 从属实体（值实体）与无键实体
 
 ### 隐藏属性与自动生成属性
-
-### 索引
 
 ### 继承
 
