@@ -294,6 +294,8 @@ public class Student
             .HasColumnName("Name")
             //列类型
             .HasColumnType("varchar(25)")
+            //设置注释
+            .HasAnnotation("")
             //默认值
             .HasDefaultValue("");
         modelBuilder.Entity<Student>().Property(p => p.Remark)
@@ -345,11 +347,75 @@ var converter = new ValueConverter<string, string>(
 
 这里我们依旧使用两种方式进行编写。
 
-### 索引
+首先是利用我们的Attribute的方式，值得注意的是，备用键（候选键）不支持Attribute的方式进行标注，作者在官方文档中并没有看到相关的内容，因此在Attribute中并不做编写。
 
-### 从属实体（值实体）与无键实体
+``` C#
+[Table("Test_Student")]
+public class Student
+{
+    //省略
+    // 设置主键
+    [Key]
+    public int Id { get; set;}
+    //省略其他
+}
+```
+
+FluentApi如下：
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    // 设置主键
+    modelBuilder.Entity<Student>()
+    //如果是设置无主键的实体则使用HasNoKey()
+    .HasKey(p=>p.Id)
+    // 设置复合备用键
+    .HasAlternateKey(p => new { p.StudentId, p.Name })
+    .HasName("AlternateKey_AK");
+}
+```
+
+#### 索引
+
+索引也是时常在数据库中遇到的，索引主要用于加速查找的速度，有点类似于书籍目录、主题一类的东西，索引就是指向表中数据的指针。在EFCore中，索引不支持使用Attribute的方式进行设置。
+
+通常情况下，索引并不是一个唯一值，并且在EFCore中，每一个外键都会被添加索引。
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    // 设置主键
+    modelBuilder.Entity<Student>()
+    // 设置索引
+    .HasIndex(p=>p.StudentId)
+    // 设置索引唯一
+    .IsUnique()
+    // 设置索引过滤器
+    .HasFilter("[StudentId] IS NOT NULL")
+    // 设置索引名
+    .HasName("Index_Id");
+```
+
+也可以使用包含列，某些关系数据库允许配置一组列，这些列包含在索引中，但不是其 "键" 的一部分。 当查询中的所有列都作为键列或非键列包含在索引中时，这可以显著提高查询性能，因为表本身无需访问。使用.IncludeProperties()方法进行设置。
+
+### 从属实体
+
+从属实体就是一个属性集合，但是它并不作为一个完整的实体存在，它是所有者的一部分。例如你的家庭住址信息，它并不适合在你的个人信息表中存在，如果将其放置在你的个人信息表中，会使得你的表过于冗余。我们
 
 ### 隐藏属性与自动生成属性
+
+#### 隐藏属性
+
+隐藏属性就是在数据库中未声明但是在EFCore中自动生成的一些属性。例如EFcore中默认所有的表都应当有一个int类型，名为Id的主键，倘若你不声明该主键，EFCore会默认的生成Id主键。
+
+框架默认的隐藏属性又：1.主键，2.外键。假如在未设置无键实体的类中没有设置Id主键的话，那么EFCore会生成int类型的Id。如果框架发现导航属性有关系数据的话，但是有没有发现外键设置的关系，那么系统会默认生成外键属性。
+
+如果你想自己设置隐藏属性或者想访问隐藏属性，示例如下：
+
+```C#
+
+```
 
 ### 继承
 
@@ -364,5 +430,7 @@ var converter = new ValueConverter<string, string>(
 #### 外键
 
 ## 数据库迁移
+
+经过以上的学习，相信你已经可以掌握数据库的基础配置方法了。
 
 ## 分散配置关系型数据库
