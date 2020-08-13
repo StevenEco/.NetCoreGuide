@@ -1,3 +1,5 @@
+
+
 # 利用Entityframework Core创建数据库模型
 
 > 本文中Entityframework Core版本为v3.1.6
@@ -294,8 +296,6 @@ public class Student
             .HasColumnName("Name")
             //列类型
             .HasColumnType("varchar(25)")
-            //设置注释
-            .HasAnnotation("")
             //默认值
             .HasDefaultValue("");
         modelBuilder.Entity<Student>().Property(p => p.Remark)
@@ -347,79 +347,176 @@ var converter = new ValueConverter<string, string>(
 
 这里我们依旧使用两种方式进行编写。
 
-首先是利用我们的Attribute的方式，值得注意的是，备用键（候选键）不支持Attribute的方式进行标注，作者在官方文档中并没有看到相关的内容，因此在Attribute中并不做编写。
+### 索引
+
+索引可以理解为书籍的目录，这将会是数据库的查询更加快速，默认情况之下，索引并不唯一。索引不能使用数据批注创建索引，可以使用FluentApi按如下方式为配置指定索引：
 
 ``` C#
-[Table("Test_Student")]
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder
+        .Entity<Student>()
+        .HasIndex(p=>p.StudentId)
+}
+```
+
+当然，如果有需要，你也可以对多个列进行索引定义，并且可以指定索引的名称，同时可以将索引修改成唯一值：
+
+``` C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder
+        .Entity<Student>()
+        .HasIndex(p=>new {p.Name,p.StudentId})
+        .HasName("Test")
+        .IsUnique();
+}
+```
+
+索引也有一些较为高级的用法，例如索引过滤器以及索引包含列。
+
+过滤器可以对索引进行筛选，只针对部分数据建立索引，从而减少对硬盘空间的需求，如下所示：
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder
+        .Entity<Student>()
+        .HasIndex(p=>p.StudentId)
+        .HasFilter("[StudentId] IS NOT NULL");
+}
+```
+
+包含列是某些关系数据库允许配置一组列，这些列包含在索引中，但不是其的一部分。 当查询中的所有列都作为键列或非键列包含在索引中时，这可以显著提高查询性能，因为表本身无需访问。例如：
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder
+        .Entity<Student>()
+        .HasIndex(p=>p.StudentId)
+        .IncludeProperties(p=>new {p.Name});
+}
+```
+
+对于上面的内容，你使用StudentId的时候可以便捷的使用整个索引，但是当你仅需要访问Name时，便不会加载索引，这样对整体的性能有显著的提高。
+
+### 从属实体（值实体）与无键实体
+
+#### 从属实体
+
+从属实体就是一个属性集合，但是它并不作为一个完整的实体存在，它是所有者的一部分。例如你的家庭住址信息，它并不适合在你的个人信息表中存在，如果将其放置在你的个人信息表中，会使得你的表过于冗余。如果没有实体，从属实体是毫无意义的。并且通常而言从属实体并不唯一且从属实体的状态并不一定实时随实体改变，举个例子，点外卖的时候，你的个人信息和你的收货地址的关系就是一个实体和从属实体的关系，你下单时的地址和你修改了收获地址时没有关系的，并且对于地址而言，倘若脱离了个人信息时毫无意义的。
+
+使用从属实体可以用数据标签（EF Core>2.1）和FluentApi的方式，这里引用官方文档的例子：
+
+```C#
+[Owned]
+public class StreetAddress
+{
+    public string Street { get; set; }
+    public string City { get; set; }
+}
+public class Order
+{
+    public int Id { get; set; }
+    public StreetAddress ShippingAddress { get; set; }
+}
+//或者
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Order>().OwnsOne(p => p.ShippingAddress);
+    //倘若ShippingAddress是私有属性，则可以使用以下
+    modelBuilder.Entity<Order>().OwnsOne(typeof(StreetAddress), "ShippingAddress");
+}
+```
+
+#### 无键实体
+
+无键实体就很简单了，就是没有主键的实体，但是和从属实体是有区别的，假如有一个表是记录各个班级人数的表，那么它其实就不是那么需要主键。定义如下：
+
+```C#
+[Keyless]
+public class ClassCount
+{
+    public string Name { get; set; }
+    public int Count { get; set; }
+}
+// 或
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<ClassCount>()
+        .HasNoKey();
+}
+```
+
+无键实体也不一定对应一张实体表，也有可能是一个视图等这种没有主键的数据。它们不同于常规实体类型，因为它们：
+
+- 不能定义键
+- 永远不会对DbContext中的更改进行跟踪，因此不会在数据库中插入、更新或删除这些更改，你需要手动调用对应方法进行操作。
+- 绝不会按约定发现。
+- 仅支持导航映射功能的子集，具体如下：
+  - 它们永远不能充当关系的主体端
+  - 它们可能没有到拥有的实体的导航
+  - 它们只能包含指向常规实体的引用导航属性
+  - 实体不能包含无键实体类型的导航属性
+
+### 隐藏(Shadow)属性与自动生成属性
+
+#### 隐藏(Shadow)属性
+
+隐藏属性就是在数据库生成时，你在类中未定义却在表中出现的一些属性。例如你定义了外键导航属性却并未定义外键属性，那么EF会生成一个自动的属性去做外键关系。同时还有主键，EF默认一切实体都有主键，即使你不定义主键，EFCore也会生成一个自增的Id作为表的主键。
+
+有时候隐藏属性也可以是你未映射到类中的列，或者你也可以用以下方法设定隐藏属性:
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder
+        .Entity<Student>()
+        .Property<DateTime>("LastUpdated");
+}
+```
+
+访问隐藏属性则通过EF的拓展方法进行访问，如下：
+
+```C#
+context.Entry(student).Property("LastUpdated").CurrentValue = DateTime.Now;
+//或在Linq
+var blogs = context.Student
+    .OrderBy(b => EF.Property<DateTime>(b, "LastUpdated"));
+```
+
+#### 自动生成属性
+
+自动生成属性就是分为两种，在添加数据时自动生成值或在数据是更新值。
+
+在添加时生成值可以使用数据注释和FluentApi定义，具体如下：
+
+```C#
 public class Student
 {
-    //省略
-    // 设置主键
-    [Key]
+    //自增
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set;}
-    //省略其他
+}
+// 或
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Student>()
+        .Property(b => b.Id)
+        .ValueGeneratedOnAdd();
 }
 ```
 
-FluentApi如下：
-
-```C#
-protected override void OnModelCreating(ModelBuilder modelBuilder)
-{
-    // 设置主键
-    modelBuilder.Entity<Student>()
-    //如果是设置无主键的实体则使用HasNoKey()
-    .HasKey(p=>p.Id)
-    // 设置复合备用键
-    .HasAlternateKey(p => new { p.StudentId, p.Name })
-    .HasName("AlternateKey_AK");
-}
-```
-
-#### 索引
-
-索引也是时常在数据库中遇到的，索引主要用于加速查找的速度，有点类似于书籍目录、主题一类的东西，索引就是指向表中数据的指针。在EFCore中，索引不支持使用Attribute的方式进行设置。
-
-通常情况下，索引并不是一个唯一值，并且在EFCore中，每一个外键都会被添加索引。
-
-```C#
-protected override void OnModelCreating(ModelBuilder modelBuilder)
-{
-    // 设置主键
-    modelBuilder.Entity<Student>()
-    // 设置索引
-    .HasIndex(p=>p.StudentId)
-    // 设置索引唯一
-    .IsUnique()
-    // 设置索引过滤器
-    .HasFilter("[StudentId] IS NOT NULL")
-    // 设置索引名
-    .HasName("Index_Id");
-```
-
-也可以使用包含列，某些关系数据库允许配置一组列，这些列包含在索引中，但不是其 "键" 的一部分。 当查询中的所有列都作为键列或非键列包含在索引中时，这可以显著提高查询性能，因为表本身无需访问。使用.IncludeProperties()方法进行设置。
-
-### 从属实体
-
-从属实体就是一个属性集合，但是它并不作为一个完整的实体存在，它是所有者的一部分。例如你的家庭住址信息，它并不适合在你的个人信息表中存在，如果将其放置在你的个人信息表中，会使得你的表过于冗余。我们
-
-### 隐藏属性与自动生成属性
-
-#### 隐藏属性
-
-隐藏属性就是在数据库中未声明但是在EFCore中自动生成的一些属性。例如EFcore中默认所有的表都应当有一个int类型，名为Id的主键，倘若你不声明该主键，EFCore会默认的生成Id主键。
-
-框架默认的隐藏属性又：1.主键，2.外键。假如在未设置无键实体的类中没有设置Id主键的话，那么EFCore会生成int类型的Id。如果框架发现导航属性有关系数据的话，但是有没有发现外键设置的关系，那么系统会默认生成外键属性。
-
-如果你想自己设置隐藏属性或者想访问隐藏属性，示例如下：
-
-```C#
-
-```
+我们也可以配置一些默认值，直接对类中属性进行操作也没有问题，
 
 ### 继承
 
+继承就很简单了
+
 ### 关系型数据
+
+#### 外键
 
 #### 一对一
 
@@ -427,10 +524,9 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 #### 多对多
 
-#### 外键
+多对多的关系就不展开赘述，简要提一句，多对多关系是无法通过EF配置的，我们需要引入一个中间表，将关系转化成和中间表的一对多关系。
 
 ## 数据库迁移
 
-经过以上的学习，相信你已经可以掌握数据库的基础配置方法了。
-
 ## 分散配置关系型数据库
+
