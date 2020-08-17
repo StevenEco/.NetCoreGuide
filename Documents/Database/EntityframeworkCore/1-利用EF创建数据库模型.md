@@ -490,13 +490,14 @@ var blogs = context.Student
 
 自动生成属性就是分为两种，在添加数据时自动生成值或在数据是更新值。
 
-在添加时生成值可以使用数据注释和FluentApi定义，具体如下：
+在添加、更新时生成值可以使用数据注释和FluentApi定义，具体如下：
 
 ```C#
 public class Student
 {
     //自增
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    //[DatabaseGenerated(DatabaseGeneratedOption.Computed)] 在更新时生成
     public int Id { get; set;}
 }
 // 或
@@ -508,25 +509,125 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 ```
 
-我们也可以配置一些默认值，直接对类中属性进行操作也没有问题，
+我们还可以设置计算列，有些列需要在更新或添加时通过表中的数据进行计算，那么我们可以使用fluentApi进行实现：
 
-### 继承
+``` C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Person>()
+        .Property(p => p.DisplayName)
+        .HasComputedColumnSql("[LastName] + ', ' + [FirstName]");
+}
+```
 
-继承就很简单了
+我们也可以配置一些默认值，直接对类中属性进行操作也没有问题，但是也可以使用FluentApi的方法：
+
+```C#
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Student>()
+        .Property(b => b.EditTime)
+        .HasDefaultValueSql("getdate()");
+}
+```
 
 ### 关系型数据
 
-#### 外键
+关系型数据库是目前数据库的主流，同时，在绝大多数数据库的设计上，都会涉及到表之间的关系。
 
 #### 一对一
 
+一对一关系就是A表中的一条数据和B表中的一条数据是一一对应关系，例如一个人的身份证和他的社保就是一种一一对应给的关系。在EF中进行配置的时候，我们需要在A，B表中定义相关的导航属性，并且设置好相关的外键，在配置的时候需要设置好外键所在的类，例如：
+
+```C#
+public class A
+{
+    public int BId { get; set; }
+    public B B{ get; set; }
+}
+public class B
+{
+    public A A{ get; set; }
+}
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<A>()
+        .HasOne(p => p.B)
+        .WithOne(p => p.A)
+        .HasForeignKey<A>(p=>p.BId};
+}
+```
+
+如果你不指定外键，EFCore会默认生成一条外键的隐藏属性。
+
 #### 一对多
+
+一对多关系就类似于学生和班级，一个学生只有一个班级，但是一个班级有许多学生，配置方法和一对一类似，但是值得注意的是，外键始终在“一”的那个表中。
+
+```C#
+public class A
+{
+    public int BId { get; set; }
+    public B B{ get; set; }
+}
+public class B
+{
+    //也可以使用IList，IEnumerable作为多的关系
+    public ICollection<A> As{ get; set; }
+}
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<A>()
+        .HasOne(p => p.B)
+        .WithMany(p => p.A)
+        .HasForeignKey(p=>p.BId};
+}
+```
 
 #### 多对多
 
-多对多的关系就不展开赘述，简要提一句，多对多关系是无法通过EF配置的，我们需要引入一个中间表，将关系转化成和中间表的一对多关系。
+多对多的关系就不展开赘述，简要提一句，多对多关系是无法通过EF配置的，我们需要引入一个中间表，将关系转化成和中间表的一对多关系就可以曲线救国实现多对多关系。
 
 ## 数据库迁移
 
+数据库的迁移就是将你的类数据迁移至数据库转换为表数据，这里你需要安装dotnet-ef或Nuget包"Microsoft.EntityframeworkCore.Tools、Microsoft.EntityframeworkCore.Design"，并且配置好DbContext。使用包管理控制台或普通控制台。
+
+Nuget包管理控制台:
+
+```pwsh
+Add-Migrations [name]
+Update-Database
+```
+
+普通控制台使用dotnet-ef
+
+``` bash
+dotnet ef migration add [name]
+dotnet ef database update
+```
+
+如果你的类配置完全正确，那么你所连接的数据库将会自动的生成你的表数据。
+
 ## 分散配置关系型数据库
 
+有时候我们的表的配置会非常多，并且数据库所需要配置的表又非常多的时候，我们最好使用一个单独的类进行配置各个表，使得代码可读性、维护性更高，我们需要创建一个类去继承EF的配置接口，例如：
+
+```C#
+public class TestMap : IEntityTypeConfiguration<Test>
+{
+    public void Configure(EntityTypeBuilder<Test> builder)
+    {
+    }
+}
+```
+
+这样你就可以在不同的类中进行数据库的配置了。
+
+更多内容请关注我的BiliBili地址以及我的博客。
+> [Github](https://github.com/StevenEco/.NetCoreGuide)
+>
+> [BiliBili主页](https://space.bilibili.com/33311288)
+>
+> [WarrenRyan's Blog](https://blog.tity.xyz)
+>
+> [博客园](https://cnblogs.com/warrenryan)

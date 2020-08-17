@@ -55,6 +55,7 @@ ValueTask 和 ValueTask<T>：在 .NET Core 2.1 中，基础内容中最重要的
 如需了解更多详情，请查看 .NET Standard 2.1 公告 (bit.ly/2RCW2fX)。
 
 ## C# 8.0
+
 C# 8.0 是下一版 C#，它在几个主要方面改进了语言。可以为 null 的引用类型有助于防止 null 引用异常，并改进了 null 安全编码做法。可以选择启用下列功能：在将 null 分配到类型字符串（举个例子）的变量或参数时看到警告。若要可以为 null，必须使用“string?”可以为 null 的引用类型。
 
 异步流对异步数据流执行的操作，就是 async/await 对单个异步结果执行的操作。新框架类型 IAsyncEnumerable<T> 是 IEnumerable<T> 的异步版本，同样也能执行 foreach 和 yield return：
@@ -70,10 +71,11 @@ public static async IAsyncEnumerable<T> FilterAsync<T>(
   }
 }
 ```
+
 除了其他功能外，借助默认接口成员实现，接口可以添加新成员，而无需中断现有实现者。Switch 表达式可确保模式匹配更为简洁，不仅可以递归模式，还能将模式深入挖掘到测试值。如需了解 C# 8.0 的更多详情，请访问 aka.ms/csharp8。
 
-
 ## .NET Framework 和 .NET Core 将如何发展？
+
 .NET Framework 是在超过 10 亿台计算机上安装的 .NET 实现，因此需要尽可能保持兼容性。因此，它的更新速度慢于 .NET Core。甚至安全修复和 bug 修复都可能会导致应用程序中断，因为应用程序依赖旧行为。我们将确保 .NET Framework 始终支持最新的网络协议、安全标准和 Windows 功能。
 
 .NET Core 是开放源代码、跨平台且快速更新的 .NET 版本。鉴于这种并行本质，可以对它应用我们无法冒险对 .NET Framework 应用的更改。也就是说，随着时间推移，.NET Core 会增添新 API 和语言功能，而 .NET Framework 则不会。
