@@ -47,14 +47,6 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
     - 如何处理异步
     - Task
 - 数据库访问技术
-  - Microsoft SqlServer数据库教程
-    - 范式
-    - 数据库的建立
-    - 基本查询/修改/插入语句
-    - 常用约束关键字
-    - 码（主、候选、外）
-    - 级联
-    - 安全操作（备份、导入、导出）
   - Entityframework Core教程
     - 数据库上下文
     - 数据模型建立
@@ -103,6 +95,8 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 - EFCore3.0
 - WPF (Base on Core3.0)
 - ASP.NET Core3.0 News
+
+### .NET 5
 
 ## 后记
 

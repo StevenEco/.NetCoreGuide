@@ -1,4 +1,0 @@
-/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netstandard2.0/clientside.Client.csprojAssemblyReference.cache
-/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netstandard2.0/staticwebassets/clientside.Client.StaticWebAssets.Manifest.cache
-/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netstandard2.0/staticwebassets/clientside.Client.StaticWebAssets.xml
-/Users/warrenryan/MyGitRepo/.NetCoreGuide/Code/Blazor/clientside/clientside.Client/obj/Debug/netstandard2.0/Blazor.inputs.txt
