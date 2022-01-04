@@ -1,36 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {}
+    "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {}
   },
   "projects": {
-    "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {
+    "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
+        "projectUniqueName": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
         "projectName": "CoreStudyList和Dict",
-        "projectPath": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
+        "projectPath": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudyList和Dict\\CoreStudyList和Dict.csproj",
         "packagesPath": "C:\\Users\\cxtio\\.nuget\\packages\\",
-        "outputPath": "E:\\OneDrive\\Documents\\Microsoft Lesson\\.NetCoreGuide\\Code\\CoreStudyList和Dict\\obj\\",
+        "outputPath": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudyList和Dict\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\cxtio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -41,20 +42,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
