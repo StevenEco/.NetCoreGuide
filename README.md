@@ -16,7 +16,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 
 - C#教程
   - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
-    - [基础类型介绍](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
+    - [基本数据类型及其存储方式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
     - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2循环判断.md)
     - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3面向对象.md)
     - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4索引器、静态、常量、this.md)
