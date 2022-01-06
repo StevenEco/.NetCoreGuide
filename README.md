@@ -117,3 +117,42 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 感谢所有 *.NET Core Developers* ，特别是那些乐于在互联网上分享自己所学所会知识的行业同仁们，你们所书写的高质量文章，让我在本教程的制作中得到了许多帮助，谢谢各位。
 
 感谢每一位为该项目点上fork、star以及watch的开发者们，你们的支持是我在茫茫黑夜中不断码字，不断对着源码分析，坚持下去的动力。感谢你们。
+
+<br/>
+<br/>
+<p id="PSignature" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 60px; background: url(&quot;https://www.cnblogs.com/images/cnblogs_com/ECJTUACM-873284962/1318325/o_o_122329534672560.png&quot;) #e5f1f4 no-repeat 1% 50%; font-family: 微软雅黑; font-size: 12px; border: #e0e0e0 1px dashed"> <br>
+        作　　者：<strong><span style="font-size: 12px; color: red"><a href="https://www.cnblogs.com/WarrenRyan/" target="_blank">WarrenRyan</a></span></strong>
+        <br>
+        出　　处：<a href="https://www.cnblogs.com/WarrenRyan/" target="_blank">https://www.cnblogs.com/WarrenRyan/</a>
+        <br>
+        关于作者：热爱数学、热爱机器学习，喜欢弹钢琴的不知名小菜鸡。
+        <br>
+        版权声明：本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接。若需商用，则必须联系作者获得授权。
+        <br>
+        特此声明：所有评论和私信都会在第一时间回复。也欢迎园子的大大们指正错误，共同进步。或者<a href="http://msg.cnblogs.com/msg/send/WarrenRyan">直接私信</a>我
+        <br>
+        声援博主：如果您觉得文章对您有帮助，可以点击文章右下角<strong><span style="color: #ff0000; font-size: 18pt">【<a id="post-up">推荐</a>】</span></strong>一下。您的鼓励是作者坚持原创和持续写作的最大动力！
+        <br>
+        <br>
+        <br>
+        博主一些其他平台：
+        <br>
+        <strong><a>微信公众号：寤言不寐</a></strong>
+        <br>
+        <strong><a href="https://space.bilibili.com/33311288" target="_blank">BiBili——小陈的学习记录</a></strong>
+        <br>
+        <strong><a href="https://github.com/StevenEco" target="_blank">Github——StevenEco</a></strong>
+        <br>
+        <strong><a href="https://space.bilibili.com/667199655" target="_blank">BiBili——记录学习的小陈（计算机考研纪实）</a></strong>
+        <br>
+        <strong><a href="https://juejin.cn/user/3756401007016173" target="_blank">掘金——小陈的学习记录</a></strong>
+        <br>
+        <strong><a href="https://space.bilibili.com/33311288" target="_blank">知乎——小陈的学习记录</a></strong>
+        <br>
+    </p>
+<h1>联系方式：</h1>
+<a style="font-family: 微软雅黑; font-size: 18px;" href="mailto:cxtionch@gmail.com">电子邮件：cxtionch@live.com</a>
+<br/>
+<br/>
+<p style="font-family: 微软雅黑; font-size: 18px;">社交媒体联系二维码：</p>
+<img style=" width: 100%" src="https://images.cnblogs.com/cnblogs_com/WarrenRyan/2090249/o_220106070541_%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E6%A0%8F.jpg"/>
