@@ -5,6 +5,7 @@
 [（博客园）.NET Core Guide](https://www.cnblogs.com/WarrenRyan/p/12367312.html)
 
 [（Github）.NET Core Guide](https://github.com/StevenEco/.NetCoreGuide)
+
 >本节内容为this、索引器、静态、常量以及只读
 
 ## 简介
@@ -117,8 +118,6 @@ class A
         //this.data表示是当前对象的字段data
         this.data = data;
     }
-
-
 }
 ```
 
