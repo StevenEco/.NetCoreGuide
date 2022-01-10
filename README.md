@@ -4,6 +4,8 @@
 
 因本人时间精力所限，更具自身水平能力之限制，望能找到同样热爱分享、热爱C#的小伙伴一同维护本仓库及进行内容上的勘误，若有同道中人，请联系我:cxtionch@live.com，本文最下方亦有我的社交媒体的联系方式。对此各位的支持不胜感激
 
+本系列文章正处于重制阶段，所有的博文都将开始加深计算机科学的内容，将每一节涉及到的计算机科学知识都进行了全面的阐述，同时保持旧版中的亮点，已重制博文在目录中已经标识。
+
 ## 简介
 
 本系列教程是一份关于微软.NET Core技术栈的全面的教程，其中涉及了C#、Typescript、Angular、Redis等一系列的教程。其中教程中通常会含有面向新手向的基础内容，也有对于已经学习了一段时间但是对C#并不甚了解的朋友的提升性内容。每一小节配有一些简单的习题。
@@ -20,7 +22,7 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 
 - C#教程
   - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
-    - [基本数据类型及其存储方式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
+    - [基本数据类型及其存储方式（已重制）](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
     - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2循环判断.md)
     - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3面向对象.md)
     - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4索引器、静态、常量、this.md)
