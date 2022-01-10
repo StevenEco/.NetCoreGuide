@@ -144,6 +144,8 @@ namespace CoreStudy01
             int [] b = new int []{1,2,3,4,5};
             //通过索引获取内容，从0开始
             Console.WriteLine(b[0]);
+            // 多维数组定义
+            int[,] matrix = new int[3, 4];
         }
         #endregion
         #region 计算结构体大小

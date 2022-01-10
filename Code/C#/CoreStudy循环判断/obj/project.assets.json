@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
-      "projectName": "CoreStudy循环判断",
-      "projectPath": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudy循环判断\\CoreStudy循环判断.csproj",
+      "projectUniqueName": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudy循环判断\\CoreStudy02循环判断.csproj",
+      "projectName": "CoreStudy02循环判断",
+      "projectPath": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudy循环判断\\CoreStudy02循环判断.csproj",
       "packagesPath": "C:\\Users\\cxtio\\.nuget\\packages\\",
       "outputPath": "D:\\GithubRepo\\.NetCoreGuide\\Code\\C#\\CoreStudy循环判断\\obj\\",
       "projectStyle": "PackageReference",
