@@ -20,91 +20,94 @@ PPT和Code以及Document需要一起结合起来看，其中Document写的最详
 
 ### WEB全栈教程
 
-- C#教程
-  - [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
-    - [基本数据类型及其存储方式（已重制）](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
-    - [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2循环判断.md)
-    - [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3面向对象.md)
-    - [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4索引器、静态、常量、this.md)
-    - [接口、枚举、抽象](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-5接口、枚举、抽象.md)
-    - [类的继承与多态](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-6多态与继承.md)
-    - [类的生命周期](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-7类的生命周期.md)
-    - [泛型](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-8泛型.md)
-    - [第一章综合编程题](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/第一章综合编程题.md)
-  - [C#中级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle)
-    - [装箱与拆箱](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
-    - [List、Dictionary](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-2List.md)
-    - [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-3Linq与拓展方法.md)
-    - [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4正则表达式.md)
-    - [常见的实用类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-5常见的实用类.md)
-    - [Json和Xml操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-6Json和XML操作.md)
-    - [文件操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-7文件操作.md)
-    - [特性标签](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-8特性标签.md)
-  - C#高级教程
-    - 反射
-    - 委托与事件
-    - 表达式树
-    - 控制反转(IOC)
-    - 多线程
-    - Socket通信
-    - 网络通信
-  - C#异步教程
-    - 异步简介
-    - 如何处理异步
-    - Task
-- 数据库访问技术
-  - Entityframework Core教程
-    - 数据库上下文
-    - 数据模型建立
-    - FluentApi与Attribute
-    - 关系型数据库建模
-    - 增删改查操作
-    - 关联数据加载
-    - 种子数据填充
+* C#教程
+  * [C#初级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy)
+    * [基本数据类型及其存储方式（已重制）](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-1基础类型.md)
+    * [循环与判断](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-2循环判断.md)
+    * [面向对象之类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-3面向对象.md)
+    * [this、索引器、静态、常量以及只读](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-4索引器、静态、常量、this.md)
+    * [接口、枚举、抽象](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-5接口、枚举、抽象.md)
+    * [类的继承与多态](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-6多态与继承.md)
+    * [类的生命周期](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-7类的生命周期.md)
+    * [泛型](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/1-8泛型.md)
+    * [第一章综合编程题](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Easy/第一章综合编程题.md)
+  * [C#中级教程](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle)
+    * [装箱与拆箱](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-1装箱与拆箱.md)
+    * [List、Dictionary](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-2List.md)
+    * [Linq及其拓展方法](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-3Linq与拓展方法.md)
+    * [正则表达式](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-4正则表达式.md)
+    * [常见的实用类](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-5常见的实用类.md)
+    * [Json和Xml操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-6Json和XML操作.md)
+    * [文件操作](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-7文件操作.md)
+    * [特性标签](https://github.com/StevenEco/.NetCoreGuide/tree/master/Documents/CSharpNoteBook/Middle/2-8特性标签.md)
+  * C#高级教程
+    * 反射
+    * 委托与事件
+    * 表达式树
+    * 控制反转(IOC)
+    * 多线程
+    * Socket通信
+    * 网络通信
+  * C#异步教程
+    * 异步简介
+    * 如何处理异步
+    * Task
+* 数据库访问技术
+  * Entityframework Core教程
+    * 数据库上下文
+    * 数据模型建立
+    * FluentApi与Attribute
+    * 关系型数据库建模
+    * 增删改查操作
+    * 关联数据加载
+    * 种子数据填充
 
-- WEB后端开发
-  - ASP.NET Core 基础
-    - [WebHost、项目结构与配置](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-1WebHost%E4%B8%8E%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE.md)
-    - [依赖注入与控制反转](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-2%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC.md)
-    - 中间件
-    - 路由
-    - 配置EFCore
-  - ASP.NET Core 3.X MVC教程
-    - Controller
-    - Razor
-    - View
-    - Model（含特性标签）
-    - TagHelper
-  - ASP.NET Core 3.X WebApi教程
-    - Http的几种请求
-    - RESTFUL风格Api
-    - 参数的传递
-    - Swagger/PostMan
-    - 使用GraphQl
-  - ASP.NET Core 3.0
+* WEB后端开发
+  * ASP.NET Core 基础
+    * [WebHost、项目结构与配置](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-1WebHost%E4%B8%8E%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE.md)
+    * [依赖注入与控制反转](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/ASP.NET%20Core%20Basic/1-2%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC.md)
+    * 中间件
+    * 路由
+    * 配置EFCore
+  * ASP.NET Core 3.X MVC教程
+    * Controller
+    * Razor
+    * View
+    * Model（含特性标签）
+    * TagHelper
+  * ASP.NET Core 3.X WebApi教程
+    * Http的几种请求
+    * RESTFUL风格Api
+    * 参数的传递
+    * Swagger/PostMan
+    * 使用GraphQl
+  * ASP.NET Core Identity
 
-- WEB前端开发
-  - Html/CSS/Typescript简单教程
-  - Blazor
-    - [Blazor](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/Blazor/1-Blazor%E9%A1%B9%E7%9B%AE.md)
-  - Angular7(8) 简要教程
-- 第三方开源库使用  
-  - IdentityServer4 授权服务教程
-  - Redis 缓存服务
-  - Docker容器
-  - WebApi With GraphQL
+* WEB前端开发
+  * Html/CSS/Typescript简单教程
+  * Blazor
+    * [Blazor](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20CoreWeb/Blazor/1-Blazor%E9%A1%B9%E7%9B%AE.md)
+  * Angular 简要教程
+  * VueJs 简明教程
+  * React 简明教程
 
-### .NET Core 3.X
+* 第三方开源库使用  
+  * IdentityServer4 授权服务教程
+  * Redis 缓存服务
+  * Docker容器
+  * WebApi With GraphQL
 
-- [.NET Core 3.X新技术](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20Core%203.0%20Preview/What's%20New.md)
-- IOT(RasperryPi&Arduino)
-- EFCore3.0
-- WPF (Base on Core3.0)
-- ASP.NET Core3.0 News
+### .NET New
 
-### .NET 5
+* .NET Core 3.X
+  * [.NET Core 3.X新技术](https://github.com/StevenEco/.NetCoreGuide/blob/master/Documents/.NET%20Core%203.0%20Preview/What's%20New.md)
+  * IOT(RasperryPi&Arduino)
+  * EFCore3.0
+  * WPF (Base on Core3.0)
+  * ASP.NET Core3.0 News
+* .NET 5
+* .NET 6
 
-### .NET 6
 
 ## 后记
 
