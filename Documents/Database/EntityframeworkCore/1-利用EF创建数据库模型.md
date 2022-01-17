@@ -1,5 +1,3 @@
-
-
 # 利用Entityframework Core创建数据库模型
 
 > 本文中Entityframework Core版本为v3.1.6
