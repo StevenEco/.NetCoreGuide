@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/基础语言教程/">
+    <Project Path="C#/CoreStudy03面向对象/CoreStudy03面向对象.csproj" />
+    <Project Path="C#/CoreStudyList和Dict/CoreStudyList和Dict.csproj" />
+    <Project Path="C#/CoreStudy基础类型/CoreStudy01.csproj" />
+    <Project Path="C#/CoreStudy循环判断/CoreStudy02循环判断.csproj" />
+    <Project Path="C#/RegexExpress/RegexExpress.csproj" />
+  </Folder>
+  <Folder Name="/网页应用程序/">
+    <Project Path="Authorize/HttpIdentity/HttpIdentity.csproj" />
+  </Folder>
+</Solution>
