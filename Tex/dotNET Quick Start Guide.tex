@@ -1,0 +1,33 @@
+\documentclass[a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex} %导入中文包
+\usepackage{geometry}
+\usepackage{pdfpages}
+\geometry{left=2.5cm,right=2cm,top=2.54cm,bottom=2.54cm} %设置书籍的页边距
+\begin{document}
+
+% 插入封面
+\include{Cover/Cover.tex} 
+
+
+\include{FrontPage/frontpage.tex}
+% 插入目录
+\tableofcontents
+
+% 插入正文
+\mainmatter
+
+\part{数值计算}
+
+%\include{./TeX_files/chapter01}
+%\include{./TeX_files/chapter02}
+%\include{./TeX_files/chapter03}
+%\include{./TeX_files/chapter04}
+%\include{./TeX_files/chapter05}
+%\include{./TeX_files/chapter06}
+
+
+\backmatter
+
+
+\end{document}
