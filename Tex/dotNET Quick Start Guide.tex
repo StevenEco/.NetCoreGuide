@@ -1,33 +1,11 @@
-\documentclass[a4paper]{book}
+\documentclass[a4paper]{ctexbook}
 \usepackage[utf8]{inputenc}
-\usepackage{ctex} %导入中文包
+\usepackage{ctex}
 \usepackage{geometry}
-\usepackage{pdfpages}
-\geometry{left=2.5cm,right=2cm,top=2.54cm,bottom=2.54cm} %设置书籍的页边距
+\usepackage{graphicx}
+\usepackage{titlepic}
+\title{test}
+\author{asfasf}
 \begin{document}
-
-% 插入封面
-\include{Cover/Cover.tex} 
-
-
-\include{FrontPage/frontpage.tex}
-% 插入目录
-\tableofcontents
-
-% 插入正文
-\mainmatter
-
-\part{数值计算}
-
-%\include{./TeX_files/chapter01}
-%\include{./TeX_files/chapter02}
-%\include{./TeX_files/chapter03}
-%\include{./TeX_files/chapter04}
-%\include{./TeX_files/chapter05}
-%\include{./TeX_files/chapter06}
-
-
-\backmatter
-
-
+\includegraphics[width=\linewidth]{images/cover.jpg}
 \end{document}
